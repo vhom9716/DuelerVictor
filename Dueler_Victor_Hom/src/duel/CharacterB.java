@@ -1,6 +1,6 @@
 package duel;
 
-public class CharacterB {
+public class CharacterB implements Dueler{
 
 	public void taunt() {
 
