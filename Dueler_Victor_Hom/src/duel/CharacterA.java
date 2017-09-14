@@ -7,6 +7,7 @@ public class CharacterA implements Dueler {
 	}
 
 	public String getName() {
+		return null;
 
 	}
 
