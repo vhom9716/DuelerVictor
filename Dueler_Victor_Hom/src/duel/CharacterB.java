@@ -14,7 +14,7 @@ public class CharacterB implements Dueler {
 		return "Joker";
 	}
 	
-	public void getStartingHP(int hp) {
+	public void setStartingHP(int hp) {
 		this.hp = hp;
 	}
 	
