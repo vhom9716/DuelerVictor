@@ -1,6 +1,6 @@
 package duel;
 
-public class CharacterB implements Dueler{
+public class CharacterB implements Dueler {
 
 	public void taunt() {
 
@@ -15,6 +15,10 @@ public class CharacterB implements Dueler{
 	}
 	
 	public int getHP() {
+		
+	}
+	
+	public boolean determineIfOpponentIsFair() {
 		
 	}
 
