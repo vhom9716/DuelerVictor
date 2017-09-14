@@ -14,11 +14,11 @@ public class CharacterB implements Dueler {
 		
 	}
 	
-	public int getHP() {
+	public int getHP(int hp) {
 		
 	}
 	
-	public boolean determineIfOpponentIsFair() {
+	public boolean determineIfOpponentIsFair(Dueler d, int hp) {
 		
 	}
 
