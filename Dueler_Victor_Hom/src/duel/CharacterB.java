@@ -7,8 +7,15 @@ public class CharacterB implements Dueler{
 	}
 
 	public String getName() {
-		return null;
 
+	}
+	
+	public void getStartingHP() {
+		
+	}
+	
+	public int getHP() {
+		
 	}
 
 }
