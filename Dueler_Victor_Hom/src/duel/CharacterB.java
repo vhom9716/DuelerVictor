@@ -3,9 +3,7 @@ package duel;
 public class CharacterB implements Dueler {
 
 	private int hp;
-	public CharacterB() {
-		
-	}
+	public CharacterB() {}
 	public void taunt() {
 		System.out.println("You're terrible!");
 	}
