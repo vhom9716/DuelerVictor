@@ -15,7 +15,9 @@ public class CharacterA implements Dueler {
 	}
 	
 	public void setStartingHP(int hp) {
-		this.hp = hp;
+		if(this.hp == ) {
+			this.hp = hp;
+		}
 	}
 	
 	public int getHP() {
@@ -27,5 +29,26 @@ public class CharacterA implements Dueler {
 			return true;
 		}
 		return false;
+	}
+	
+	public int getAction(Object caller) {
+		if (caller instanceof Duel) {
+			if (Math.random() < 0.08) {
+				return 0;
+			}
+			if (Math.random() < .2) {
+				return 1;
+			}
+			if (Math.random() < 1) {
+				return 2;
+			}
+		}
+		return 3;
+	}
+	
+	public void hit(Object caller) {
+		if (caller instanceof Duel) {
+			this.hp =- 10;
+		}
 	}
 }
