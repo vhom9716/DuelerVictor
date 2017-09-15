@@ -32,7 +32,9 @@ public class CharacterB implements Dueler {
 	}
 	
 	public void hit(Object caller) {
-		
+		if(caller instanceof Duel) {
+			hp -= 10;
+		}
 	}
 
 }
