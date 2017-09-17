@@ -5,7 +5,7 @@ public class CharacterB implements Dueler {
 	private int hp;
 	public CharacterB() {}
 	public void taunt() {
-		System.out.println("You're terrible!");
+		System.out.println("Seeing you makes me want to barf!");
 	}
 
 	public String getName() {
@@ -28,12 +28,15 @@ public class CharacterB implements Dueler {
 	}
 	
 	public int getAction(Object caller) {
-		
+		if (caller instanceof Duel) {
+			return (int) Math.floor(Math.random() * 3);
+			} else
+			return 3;
 	}
 	
 	public void hit(Object caller) {
 		if(caller instanceof Duel) {
-			hp -= 10;
+			this.hp -= 10;
 		}
 	}
 
