@@ -15,9 +15,7 @@ public class CharacterA implements Dueler {
 	}
 	
 	public void setStartingHP(int hp) {
-		if(this.hp == ) {
 			this.hp = hp;
-		}
 	}
 	
 	public int getHP() {
