@@ -49,7 +49,7 @@ public class CharacterA implements Dueler {
 				loaded = true;
 				return 0;
 			}else {
-				if (Math.random() < .7) {
+				if (Math.random() < .8) {
 					loaded = false;
 					return 1;
 				}
