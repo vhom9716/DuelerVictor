@@ -51,7 +51,7 @@ public class CharacterB implements Dueler {
 					return 0;
 				}
 				else
-					return 2;s
+					return 2;
 			}
 			
 //			int actionNumber = (int) Math.floor(Math.random() * 3);
