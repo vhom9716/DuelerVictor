@@ -13,7 +13,7 @@ public class CharacterA implements Dueler {
 	}
 	public void taunt() {
 		if (!tauntOne) {
-			System.out.println(taunts[0]);
+			System.out.println(taunts[(int) Math.floor(Math.random() * 2)]);
 			tauntOne = true;
 		}else {
 			System.out.println(taunts[1]);
