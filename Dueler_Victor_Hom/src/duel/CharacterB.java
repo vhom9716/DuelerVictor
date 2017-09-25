@@ -3,9 +3,11 @@ package duel;
 public class CharacterB implements Dueler {
 
 	private int hp;
+	private String[] taunts = {"nfasjklfn", "dashdask", "djkashdklasm"}; 
+	
 	public CharacterB() {}
 	public void taunt() {
-		System.out.println("Seeing you makes me want to barf!");
+		System.out.println(taunts[(int) Math.floor(Math.random()* taunts.length)]);
 	}
 
 	public String getName() {

@@ -3,11 +3,14 @@ package duel;
 public class CharacterA implements Dueler {
 
 	private int hp;
+	private boolean started;
+	private String[] taunts = {"nfasjklfn", "dashdask", "djkashdklasm"}; 
+	
 	public CharacterA() {
-		
+		started = false;
 	}
 	public void taunt() {
-		System.out.println("Blood for the Blood God!");
+		System.out.println(taunts[(int) Math.floor(Math.random()* taunts.length)]);
 	}
 
 	public String getName() {
@@ -15,7 +18,10 @@ public class CharacterA implements Dueler {
 	}
 	
 	public void setStartingHP(int hp) {
+		if(!started) {
 			this.hp = hp;
+		}
+
 	}
 	
 	public int getHP() {
