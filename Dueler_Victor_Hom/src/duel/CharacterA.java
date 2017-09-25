@@ -6,6 +6,7 @@ public class CharacterA implements Dueler {
 	private boolean started = false;
 	private String[] taunts = {"Blood For the Blood God!", "Fall into Hell!"}; 
 	private boolean tauntOne = false;
+	private boolean loaded = false;
 	
 	public CharacterA() {
 		
@@ -44,14 +45,24 @@ public class CharacterA implements Dueler {
 	
 	public int getAction(Object caller) {
 		if (caller instanceof Duel) {
-			if (Math.random() < 0.08) {
+			if (Math.random() < 0.24) {
+				loaded = true;
 				return 0;
 			}
-			if (Math.random() < .2) {
+			if (Math.random() > .7) {
+				return 2;
+			}
+			if (Math.random() < .3 && loaded) {
+				loaded = false;
 				return 1;
 			}
-			if (Math.random() < 1) {
-				return 2;
+			else {
+				if(Math.random() < .5) {
+					return 0;
+				}
+				else {
+					return 2;
+				}
 			}
 		}
 		return 3;
