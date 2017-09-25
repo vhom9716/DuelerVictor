@@ -72,7 +72,6 @@ public class CharacterB implements Dueler {
 //				else
 //					return 2;
 //			}
-//			return 0;
 		} else
 		return 3;
 	}
