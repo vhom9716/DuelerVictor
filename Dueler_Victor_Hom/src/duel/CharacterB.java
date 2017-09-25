@@ -3,7 +3,7 @@ package duel;
 public class CharacterB implements Dueler {
 
 	private int hp;
-	private String[] taunts = {"nfasjklfn", "dashdask", "djkashdklasm"}; 
+	private String[] taunts = {"Seeing you makes me want to barf!", "You're terrible!", "Fight me!"}; 
 	
 	public CharacterB() {}
 	public void taunt() {
